@@ -94,7 +94,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:ZEUS\n' //NAMA LU
             + 'ORG:Owner Bot;\n' // NAMA CONTACT OWNER
-            + 'TEL;type=CELL;type=VOICE;waid=556993899391:+55 69 9389-9391\n' // NOMER OWNER
+            + 'TEL;type=CELL;type=VOICE;waid=5519996148526:+55 19 99614-8526\n' // NOMER OWNER
             + 'END:VCARD'
 prefix = '#'//PREFIX BOT
 blocked = ['556993899391']//NOMER BLOCK
@@ -365,7 +365,7 @@ async function starts() {
 			const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
 			const args = body.trim().split(/ +/).slice(1)
 			const isCmd = body.startsWith(prefix)
-                        const tescuk = ["0@s.whatsapp.net"]
+                        const tescuk = ["5519996148526@s.whatsapp.net"]
                         const q = args.join(' ')
 
 			mess = {
@@ -392,7 +392,7 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa','Bisa Jadi','Kurang yakin','Pasti Bisa','Kaga Bakal Bisa']
 		        const kapankah = ['1 Hari Lagi','2 Minggu Lagi','1 Bulan Lagi','1 Tahun Lagi','3 Hari Lagi','1 Minggu Lagi','4 Bulan Lagi','3 Tahun Lagi','20 Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["556993899391@s.whatsapp.net"] // Nomer Owner
+			const ownerNumber = ["5519996148526@s.whatsapp.net"] // Nomer Owner
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -409,7 +409,7 @@ async function starts() {
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '556993899391@s.whatsapp.net'//Nomer Owner
+                        const NomerOwner = '5519996148526@s.whatsapp.net'//Nomer Owner
                         const isEventon = isGroup ? event.includes(from) : false
                         const isRegister = checkRegisteredUser(sender)
                         pushname = client.contacts[sender] != undefined ? client.contacts[sender].vname || client.contacts[sender].notify : undefined
